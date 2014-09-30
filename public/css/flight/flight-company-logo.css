@@ -1,0 +1,66 @@
+/* 航空公司logo */
+.icon-size-50,.icon-size-32,.icon-size-20,.icon-size-16{display:inline-block}
+.icon-size-50{background:url(../../images/flight/flight-comany-logo-20.png) no-repeat;width:50px;height:50px}
+.icon-size-32{background:url(../../images/flight/flight-comany-logo-20.png) no-repeat;width:32px;height:32px}
+.icon-size-20{background:url(../../images/flight/flight-comany-logo-20.png) no-repeat;width:20px;height:20px}
+.icon-size-16{background:url(../../images/flight/flight-comany-logo-20.png) no-repeat;width:16px;height:16px}
+/* CA ==> 国际航空 */
+.flightLBP-CA{background-position:0 0}
+/* CZ ==> 南方航空 */
+.flightLBP-CZ{background-position:-50px 0}
+/* MU ==> 东方航空 */
+.flightLBP-MU{background-position:-100px 0}
+/* HO ==> 吉祥航空 */
+.flightLBP-HO{background-position:0 -50px}
+/* 8L ==> 祥鹏航空 */
+.flightLBP-8L{background-position:-50px -50px}
+/* GS ==> 天津航空 */
+.flightLBP-GS{background-position:-100px -50px}
+/* 3U ==> 四川航空 */
+.flightLBP-3U{background-position:0 -100px}
+/* FM ==> 上海航空 */
+.flightLBP-FM{background-position:-50px -100px}
+/* SC ==> 山东航空 */
+.flightLBP-SC{background-position:-100px -100px}
+/* G5 ==> 华夏航空 */
+.flightLBP-G5{background-position:0 -150px}
+/* JD ==> 首都航空 */
+.flightLBP-JD{background-position:-50px -150px}
+/* JR ==> 幸福航空 */
+.flightLBP-JR{background-position:-100px -150px}
+/* HU ==> 海南航空 */
+.flightLBP-HU,.flightLBP-CN{background-position:0 -200px}
+/* ZH ==> 深圳航空 */
+.flightLBP-ZH{background-position:-50px -200px}
+/* MF ==> 厦门航空 */
+.flightLBP-MF{background-position:-100px -200px}
+/* PN ==> 西部航空 */
+.flightLBP-PN{background-position:0 -250px}
+/* NS ==> 河北航空 */
+.flightLBP-NS{background-position:-50px -250px}
+/* VD ==> 河南航空 */
+.flightLBP-VD{background-position:-100px -250px}
+/* KN ==> 联合航空 */
+.flightLBP-KN{background-position:0 -300px}
+/* BK ==> 欧凯航空 */
+.flightLBP-BK{background-position:-50px -300px}
+/* EU ==> 成都航空 */
+.flightLBP-EU{background-position:-100px -300px}
+/* 9C ==> 春秋航空 */
+.flightLBP-9C{background-position:0 -350px}
+/* KY ==> 昆明航空 */
+.flightLBP-KY{background-position:-50px -350px}
+/* TV ==> 西藏航空 */
+.flightLBP-TV{background-position:-100px -350px}
+/* OQ ==> 重庆航空 */
+.flightLBP-OQ{background-position:0 -400px}
+/* GJ ==> 长龙航空 */
+.flightLBP-GJ{background-position:-50px -400px}
+/* YI ==> 云南英安航空 */
+.flightLBP-YI{background-position:-100px -400px}
+/* DZ ==> 东海航空 */
+.flightLBP-DZ{background-position:0px -450px}
+/* QW ==> 青岛航空 */
+.flightLBP-QW{background-position:-50px -450px}
+/* DR ==> 瑞丽航空 */
+.flightLBP-DR{background-position:-100px -450px}

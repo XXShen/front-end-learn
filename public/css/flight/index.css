@@ -1,0 +1,150 @@
+.main{
+.main{
+    font-family: "Microsoft Yahei";
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: 165px;
+    margin-bottom: 10px;
+}
+.form{
+    padding: 0 35px;
+}
+.input-item{
+    border-bottom: 2px solid #cecece;
+    line-height: 110px;
+}
+.loc-select{
+    position: relative;
+    height: 140px;
+}
+.loc-select .from-select,
+.loc-select .to-select{
+    box-sizing: border-box;
+    padding-right: 46px;
+    width: 50%;
+    height:100%;
+    position: absolute;
+    top:0;
+    background: url('../../images/flight/index-sprite.png') right 45px no-repeat;
+}
+
+.loc-select label{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 22px;
+    color: #7f7f7f;
+}
+.loc-select .city{
+    font-size: 42px;
+    border: none;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: none;
+}
+.loc-select .from-select{
+    left: 0;
+}
+
+.loc-select .to-select{
+    left: 50%;
+    text-align: right;
+}
+.loc-select .to-select .city{
+    text-align: right;
+}
+.switch-btn{
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: url('../../images/flight/index-sprite.png') 20px -1070px no-repeat;
+}
+
+.day-select{
+    font-size: 30px;
+}
+
+.day-select label{
+    float: left;
+    padding-left: 68px;
+    color: #7f7f7f;
+    background: url('../../images/flight/index-sprite.png') 20px -66px no-repeat;
+}
+.day-select .time{
+    float: right;
+    background: url('../../images/flight/index-sprite.png') right 45px no-repeat;
+    padding-right: 46px;
+}
+.day-select .day{
+    color: #f60;
+}
+.day-select .date{
+    color: #000;
+}
+.form .submit-btn{
+    display: block;
+    text-align: center;
+    height: 85px;
+    line-height: 85px;
+    background: #fff;
+    font-size: 34px;
+    background: #FE932B;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer{
+    margin-top: 80px;
+    border-top: 1px solid #ececec;
+    padding: 0 46px 50px;
+    color: #c6c6c6;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+footer .promise-list{
+    margin-top: 30px;
+}
+footer .promise-list li{
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding-left: 84px;
+    border-right: 2px solid #DCE1E5;
+}
+footer .promise-list li:first-child{
+    background: url('../../images/flight/index-sprite.png') 20px -491px no-repeat;
+}
+footer .promise-list li:nth-child(2){
+    background: url('../../images/flight/index-sprite.png') 20px -693px no-repeat;
+}
+footer .promise-list li:last-child{
+    background: url('../../images/flight/index-sprite.png') 20px -889px no-repeat;
+    border-right: 0;
+}
+footer .promise{
+    position: relative;
+    height: 34px;
+    margin-top: 20px;
+    text-align: center;
+}
+footer .promise .text{
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    padding: 0 10px;
+}
+footer .promise .line{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-image: linear-gradient(to left, #eee 0px, #dedede 15%, #dedede 85%, #eee 100%);
+}

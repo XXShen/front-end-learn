@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>过滤示例</title>
+    <style>
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden
+    }
+    .clearfix {
+        *+height: 1%;
+    }
+    .main {
+        margin: 30px auto;
+        width: 960px;
+    }
+    .filter-wrap {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    .filter-wrap .filter-condition-item {
+        margin-bottom: 10px;
+    }
+    .filter-wrap label {
+        float: left;
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .filter-wrap ul {
+        float: left;
+        margin-left: 10px;
+    }
+    .filter-wrap .filter-item {
+        float: left;
+        margin-right: 10px;
+        cursor: pointer;
+        padding: 0 10px;
+    }
+    .filter-wrap .selected {
+        background: #f60;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main" id="filter-fruit-box">
+        <h2>选择水果</h2>
+        <ul class="filter-wrap">
+            <li class="clearfix filter-condition-item" data-id="color">
+                <label>颜色</label>
+                <ul class="clearfix">
+                    <li class="filter-item selected" data-id="">不限</li>
+                    <li class="filter-item" data-id="red">红色</li>
+                    <li class="filter-item" data-id="green">绿色</li>
+                </ul>
+            </li>
+            <li class="clearfix filter-condition-item" data-id="season">
+                <label>季节</label>
+                <ul class="clearfix">
+                    <li class="filter-item selected" data-id="">不限</li>
+                    <li class="filter-item" data-id="spring">春</li>
+                    <li class="filter-item" data-id="summer">夏</li>
+                    <li class="filter-item" data-id="fall">秋</li>
+                    <li class="filter-item" data-id="winer">冬</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>查询结果</h2>
+        <ul class="result">
+        </ul>
+        <a href="javascript:void(0);" class="more">更多</a>
+    </div>
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.js"></script>
+    <script src="filter.js"></script>
+    <script>
+    $(document).ready(function() {
+        var filter = new Filter({
+            url: 'data.json',
+            init: function(scope) {
+                scope.page = 1;
+
+                scope.template = '<li class="item">' +
+                    '<h3>{name}</h3>' +
+                    '评价：' +
+                    '<span>{comment}</span>' +
+                    '</li>';
+
+                scope.$el = $('#filter-fruit-box');
+                scope.$result = scope.$el.find('.result');
+                scope.$filterItem = scope.$el.find('.filter-item');
+
+                scope.$filterItem.click(function() {
+                    var $this = $(this);
+                    if (!$this.hasClass('selected')) {
+                        $this.closest('.filter-condition-item').find('.filter-item').removeClass('selected');
+                        $this.addClass('selected');
+                        scope.reset = true;
+                        scope.page = 1;
+                        scope.search();
+                    }
+                });
+
+                // 更多
+                scope.$el.find('.more').click(function() {
+                    scope.reset = false;
+                    scope.page++;
+                    scope.search();
+                });
+            },
+            render: function(data, scope) {
+                var html = [];
+                var template = scope.template;
+                for (var i = 0, len = data.length; i < len; i++) {
+                    var each = data[i];
+                    html.push(template.replace('{name}', each.name).replace('{comment}', each.comment));
+                }
+                if (scope.reset) {
+                    scope.$result.html(html.join(''));
+                } else {
+                    scope.$result.append(html.join(''));
+                }
+
+            },
+            getSerchStr: function(scope) {
+                var filters = ['page=' + scope.page];
+                var $selectedItems = $('.filter-condition-item .selected');
+                $selectedItems.each(function() {
+                    var $this = $(this);
+                    var value = $this.data('id');
+                    if (value === '') {
+                        return;
+                    }
+                    var key = $this.closest('.filter-condition-item').data('id');
+                    filters.push(key + '=' + value);
+                });
+                return '?' + filters.join('&');
+            }
+        });
+
+        filter.search();
+    });
+    </script>
+</body>
+
+</html>

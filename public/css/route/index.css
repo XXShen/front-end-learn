@@ -1,0 +1,524 @@
+.around-index,.around-list,.around-info,.long-list,.long-index{
+	width: 100%;
+	background: #e8e7e7;
+	overflow: hidden;
+}
+.around-index .banner,
+.long-index .banner{
+	width: 100%;
+	border: none;
+}
+.around-index .search-area,
+.long-index .search-area{
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px;
+	overflow: hidden;
+}
+.long-index .search-area .control-group{
+	width:100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	height: 40px;
+}
+.long-index .search-area .label{
+	float: left;
+	line-height: 40px;
+	text-align: left;
+	font-size: 15px;
+	color: #434e5a;
+	width: 70px;
+}
+.long-index .search-area .control-input{
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+	height: 40px;
+	background: #fff;
+	margin-left: 70px;
+	padding: 0 10px;
+	position: relative;
+}
+.long-index .search-area .input{
+	width: 100%;
+	line-height: 38px;
+	border: none;
+	font-size: 15px;
+	color: #434e5a;
+}
+.long-index .search-area .arrow{
+	width: 18px;
+	height: 26px;
+	background: url(../../images/route/icon_arrow_right.png) right center no-repeat;
+	background-size: 50%;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	z-index:11;
+}
+.long-index .search-area .search-btn{
+	width: 100%;
+	height: 44px;
+	text-align: center;
+	border:none;
+	background: #fe932b;
+	font-size: 18px;
+	color: #fff;
+	line-height: 44px;
+}
+.around-index .search-box{
+	position: relative;
+	width: 100%;
+	height: 44px;
+	box-sizing: border-box;
+	border:1px solid #fe932b;
+	background: #fe932b;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+}
+.around-index .search-input{
+	margin-right: 68px;
+	height: 44px;
+	overflow: hidden;
+}
+.around-index .search-input .input{
+	background: #fff;
+	box-sizing: border-box;
+	border:none;
+	border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	width: 100%;
+	padding: 1px 10px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+}
+.around-index .search-btn{
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 68px;
+	height: 44px;
+	background: url(../../images/route/search.png) center center no-repeat;
+	background-size: 22px 22px;
+	border-radius:0 5px 5px 0;
+	-webkit-border-radius:0 5px 5px 0;
+	border:none;
+	z-index:11;
+}
+.around-index .title{
+	font-weight: bold;
+	font-size: 15px;
+	color: #3d3d3d;
+	box-sizing: border-box;
+	padding: 10px 10px 10px 30px;
+	background: url(../../images/route/fire.png) 10px center no-repeat;
+	background-size: 11px 15px;
+}
+/*around-list*/
+.around-list .menubar,
+.long-list .menubar{
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d4d7db;
+	box-shadow: 0 1px 1px #c2c7cd;
+	background: #e9ecef;
+	height: 35px;
+	display: box;
+	display: -webkit-box;
+}
+.around-list .menubar .tab,
+.long-list  .menubar .tab{
+	box-flex:1;
+	-webkit-box-flex:1;
+	position: relative;
+	border-right: 1px solid #d4d7db;
+	box-sizing: border-box;
+	border-left:1px solid #fff;
+	text-align: center;
+	color: #434e5a;
+	font-size: 12px;
+	line-height: 34px;
+	display: block;
+}
+.around-list .menubar .tab:first-child,
+.long-list .menubar .tab:first-child{
+	border-left: none;
+}
+.around-list .menubar .tab:last-child,
+.long-list .menubar .tab:last-child{
+	border-right: none;
+}
+.around-list .menubar .tab.cur,
+.long-list  .menubar .tab.cur{
+	border-bottom: 2px solid #35cc00;
+}
+.around-list .menubar .icon,
+.long-list  .menubar .icon{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	vertical-align: -2px;
+	margin-left: 5px;
+}
+.around-list .menubar .icon.up,
+.long-list .menubar .icon.up{
+	background: url(../../images/route/icon_up.png) no-repeat;
+	background-size: 100%;
+}
+.around-list .menubar .icon.down,
+.long-list .menubar .icon.down{
+	background: url(../../images/route/icon_down.png) no-repeat;
+	background-size: 100%;
+	vertical-align: -3px;
+}
+.around-list .menubar .icon.filter,
+.long-list  .menubar .icon.filter{
+	background: url(../../images/route/icon_filter.png) no-repeat;
+	background-size: 100%;
+}
+.long-list .route-box .info-bar,
+.long-index .route-box .info-bar{
+	margin-top: 20px;
+}
+.long-list .route-box .vote,
+.long-index .route-box .vote{
+	color:#006edc;
+	background: url(../../images/route/icon_smile.png) left 4px no-repeat;
+	background-size: 11px;
+	padding-left: 15px;
+	margin-right: 20px;
+	display: inline-block;
+	width: 50px;
+}
+/*around-info*/
+.around-info .banner,
+.long-info .banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.around-info .banner img,
+.long-info .banner img{
+	width: 100%;
+	border:none;
+	display: block;
+}
+.around-info .banner .titlebar,
+.long-info .banner .titlebar{
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.around-info .banner .mask,
+.long-info .banner .mask{
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	box-sizing: border-box;
+	padding: 15px 10px;
+}
+.around-info .banner .info,
+.long-info .banner .info{
+	position: relative;
+	z-index: 111;
+	padding: 10px 15px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 16px;
+}
+.around-info .banner .info .title,
+.long-info .banner .info .title{
+	width: 60%;
+	float: left;
+	overflow: hidden;
+	color: #fff;
+}
+.around-info .banner .info .price,
+.long-info .banner .info .price{
+	vertical-align: middle;
+	float: right;
+	overflow: hidden;
+	color: #fff;
+}
+.around-info .banner .info .num,
+.long-info .banner .info .num{
+	color: #f60;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.around-info .main,
+.long-info .main{
+	padding:10px;
+	background: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+}
+.around-info .main .box,
+.long-info .main .box{
+	width:100%;
+	box-sizing: border-box;
+	border:1px solid #dcdcdb;
+	background: #f7f7f4;
+	overflow: hidden;
+	padding: 10px;
+	color:#434e5a;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	display: block;
+}
+.long-info .main .box{
+	margin-bottom: 0;
+	border-top:0;
+}
+.long-info .main .box:first-child{
+	border-top: 1px solid #dcdcdb;
+}
+.long-info .box.other{
+	background: #fff;
+	position: relative;
+}
+.long-info .other .calender{
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	color: #333;
+	font-size: 14px;
+}
+.long-info .other .arrow{
+	position: absolute;
+	width: 18px;
+	height:26px;
+	background: url(../../images/route/icon_arrow_right.png) top center no-repeat;	
+	background-size: 50%;
+	top:9px;
+	right: 0;
+}
+.long-info .calender .date{
+	color: #35cc00;
+	font-size: 13px;
+	line-height: 30px;
+	float: right;
+	margin-right: 20px;
+}
+.long-info .other.cate{
+	color: #949494;
+	font-size: 13px;
+	line-height: 20px;
+}
+.long-info .other.cate .price{
+	float: right;
+	color: #e76924;
+}
+.around-info .main .box .avater{
+	width: 42px;
+	height: 42px;
+	border-radius:21px;
+	-webkit-border-radius:21px;
+	float: left;
+	border:none;
+	margin-right: 10px;
+}
+.around-info .main .box .tipbar{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.around-info .box .book-btn{
+	display: block;
+	float: right;
+	width: 67px;
+}
+.around-info .book-btn .book-text{
+	display: block;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px 5px 0 0 ;
+	background: #ff8533;
+}
+.around-info .book-btn .book-text2{
+	text-align: center;
+	color: #ff8533;
+	font-size: 11px;
+	display: block;
+	background: #fff;
+	height: 21px;
+	line-height: 21px;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+	border:1px solid #ff8533;
+	border-top:none;
+	width: 100%;
+}
+.around-info .box .price-part{
+	width: 60%;
+	float: left;
+	overflow: hidden;
+	float: left;
+}
+.around-info .box .pricebar {
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+.around-info .box .pricebar .cutprice{
+	color:#f60;
+	font-size: 18px;
+	line-height: 18px;
+	margin-right: 10px;
+}
+.around-info .box .pricebar .orgprice{
+	color: #9ea5ac;
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: line-through;
+	margin-right: 10px;
+}
+.around-info .box .pricebar .reprize{
+	border:1px solid #f60;
+	background: #fff;
+	height: 16px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	color: #f60;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 16px;
+	padding-right: 5px;
+	vertical-align: -2px;
+}
+.around-info .box .pricebar .re-icon{
+	display:inline-block;
+	width: 14px;
+	height: 14px;
+	background: #f60;
+	text-align: center;
+	color: #fff;
+}
+.around-info .box .tag{
+	height: 17px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	line-height: 17px;
+	text-align: center;
+	padding:0 5px;
+	color: #fff;
+	font-size: 10px;
+	display: inline-block;
+	margin-right: 15px;
+}
+.around-info .box .tag-group{
+	background: #fc8731;
+}
+.around-info .box .tag-cut{
+	background: #ff5926;
+}
+.around-info .list{
+	width: 100%;
+	height: 44px;
+	padding: 10px;
+	border:1px solid #dddddd;
+	box-sizing: border-box;
+	background: #fcfcfc;
+}
+.around-info .list.first{
+	border-bottom: none;
+}
+.around-info .list a{
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	line-height: 24px;
+	background: url(../../images/route/icon_arrow.png) right center no-repeat;
+	background-size: 13px 9px;
+	color: #434e5a;
+}
+.long-info .subbox{
+	width: 100%;
+	overflow: hidden;
+	border-top:1px solid #dedede;
+	margin:10px auto;
+}
+.long-info .subbox .slist{
+	width: 100%;
+	height: 44px;
+	border:1px solid #dedede;
+	box-sizing: border-box;
+	border-top: none;
+	padding: 0 10px;
+}
+.long-info .subbox .slist a{
+	display: block;
+	width:100%;
+	height: 42px;
+	background: #fcfcfc;
+	color: #434e5a;
+	font-size: 15px;
+	line-height: 42px;
+	background: url(../../images/route/icon_arrow_right.png) right center no-repeat;
+	background-size:9px 13px;
+}
+.long-info-btn{
+	width: 100%;
+	height: 44px;
+	color: #fff;
+	text-align: center;
+	background: #fe932b;
+	font-size: 18px;
+	line-height: 44px;
+	display: block;
+}
+/*common*/
+.route-box{
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: #fff;
+	padding:10px;
+	border-top:1px solid #cecece;
+	margin-bottom: 10px;
+	display: block;
+	color: #434e5a;
+	font-size: 12px;
+	line-height: 20px;
+}
+.route-box .pic{
+	width: 95px;
+	height: 71px;
+	border: 1px solid #d7d6d6;
+	padding:1px;
+	background: #fff;
+	float: left;
+	margin-right: 5px;
+}
+.route-box .subtitle{
+	font: 15px/20px "";
+	color: #434e5a;
+	overflow: hidden;
+	max-height: 40px;
+	text-overflow: ellipse;
+}
+.route-box .price{
+	float: right;
+	color: #9ea5ac;
+}
+.route-box .price .detail{
+	font-size: 18px;
+	color:#ff6600;
+}

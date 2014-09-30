@@ -1,0 +1,177 @@
+.main{
+	background: #e8e7e7;
+}
+.summary{
+	padding: 0 20px;
+	height: 44px;
+	line-height: 44px;
+	background: #e4e7ea;
+	border-bottom: 1px solid #c8d2dc;
+	color: #434e5a;
+	font-size: 24px;
+}
+
+.summary .time{
+	float: left;
+}
+.summary .company{
+	float: right;
+}
+.summary .flight-icon{
+	position: relative;
+	top: 3px;
+}
+
+.info-box{
+	border: 2px solid #cecece;
+	margin: 15px 20px;
+	background: #f4eeeb;
+	color: #434e5a;
+}
+
+.flight-info{
+	padding: 20px;
+	position: relative;
+}
+
+.flight-info .from,
+.flight-info .to{
+	text-align: center;
+	box-sizing:border-box;
+	width: 45%;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.flight-info .from{
+	float: left;
+}
+
+.flight-info .to{
+	float: right;
+}
+.flight-info .from .time,
+.flight-info .to .time{
+	color: #006edc;
+	font-size: 34px;
+	height: 48px;
+	line-height: 48px;
+	margin-bottom: 10px;
+}
+
+.flight-info .flight-icon{
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	margin-right: -39px;
+	display: block;
+	width: 78px;
+	height: 56px;
+    background: url('../../images/flight/icon.png') left -100px no-repeat;
+}
+
+.info-box .price-info{
+	border-bottom: 2px solid #cecece;
+	padding: 20px 15px;
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.price-info .item>div{
+	box-sizing:border-box;
+	display: inline-block;
+}
+.price-info .item .ticket-price{
+	width: 30%;
+}
+.price-info .ticket-price .price{
+	color: #ff6600;
+}
+.price-info .item .other-price{
+	width: 42%;
+}
+.price-info .item .total-price{
+	width: 25%;
+}
+
+.info-box .rules{
+	height: 80px;
+	line-height: 80px;
+	font-size: 30px;
+    background: url('../../images/flight/arrow.png') right -575px no-repeat;
+    margin: 0 15px;
+}
+
+.fill-box .item{
+	height: 80px;
+	line-height: 80px;
+	font-size: 26px;
+    padding: 0 15px;
+	border-bottom: 2px solid #cecece;
+	padding-left: 75px;
+}
+.fill-box .item:last-child{
+	border-bottom: none;
+}
+.fill-box .passenger{
+    background: url('../../images/flight/icon.png') 25px -175px no-repeat;
+}
+.fill-box .contact-people{
+    background: url('../../images/flight/icon.png') 25px -275px no-repeat;
+}
+.fill-box .mobile{
+    background: url('../../images/flight/icon.png') 25px -375px no-repeat;
+}
+.fill-box .insure{
+    background: url('../../images/flight/icon.png') 25px -475px no-repeat;
+}
+.fill-box .voucher{
+    background: url('../../images/flight/icon.png') 25px -575px no-repeat;
+}
+.fill-box .passenger .item-inner,
+.fill-box .insure .item-inner,
+.fill-box .voucher .item-inner{
+    background: url('../../images/flight/arrow.png') right -575px no-repeat;
+}
+
+.fill-box label{
+	float: left;
+	width: 20%;
+}
+.fill-box input{
+	/*margin-left: 150px;*/
+	display: table-cell;
+	vertical-align: center;
+	width: 70%;
+	border:none;
+	background: none;
+}
+.fill-box .item p{
+	text-align: right;
+	color: #006edc;
+	font-size: 24px;
+	margin-right: 40px;
+}
+
+.form-foot{
+	color: #fff;
+	font-size: 34px;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+	position: relative;
+}
+.form-foot .total-price {
+	margin-right: 232px;
+	background: #fe932b;
+}
+.form-foot [type=submit]{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	color: inherit;
+	background: #ff6c00;
+	width: 232px;
+	border:none;
+}

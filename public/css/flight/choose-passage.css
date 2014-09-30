@@ -1,0 +1,44 @@
+.main{
+	background: #e8e7e7;
+	padding: 40px;
+	padding-bottom: 200px;
+}
+
+form li{
+	height: 74px;
+	line-height: 74px;
+	padding: 0 20px;
+	border: 2px solid #cecece;
+	margin-bottom: 20px;
+	font-size: 28px;
+	background: #fff;
+}
+form li label{
+	float: left;
+	width: 143px;
+	color: #434e5a;
+}
+form li .drop-down{
+    background: url('../../images/flight/arrow.png') right -670px no-repeat;
+    box-sizing:border-box;
+}
+form li input{
+	margin-left: 30px;
+	display: table-cell;
+	vertical-align: center;
+	border:none;
+	background: none;
+	width: 50%;
+}
+
+form [type=submit]{
+	display: block;
+	width: 100%;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+	color: #fff;
+	background: #fe932b;
+	border:none;
+	font-size: 36px;
+}

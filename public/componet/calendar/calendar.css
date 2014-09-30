@@ -1,0 +1,57 @@
+.calendar .calendar-title{
+	text-align: center;
+	font-size: 30px;
+	color: #303030;
+}
+.calendar table{
+    width: 100%;
+    font-size: 28px;
+	color:#6C6B6B;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+.calendar .calendar-title .month{
+	color: #FD9147;
+}
+.calendar thead tr{
+	height: 50px;
+	background:#F3F3F3;
+}
+.calendar tbody tr{
+	height: 80px;
+}
+.calendar td{
+	border: 1px solid #C8D2DC;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.calendar td.festival,
+.calendar th.sunday,
+.calendar td.sunday,
+.calendar th.saturday,
+.calendar td.saturday{
+	color:#FD9147;
+}
+
+.calendar td.disabled{
+	color:#B9B9B9;
+}
+.calendar td.today{
+	color:#fff;
+	background: #FD9147;
+}
+
+.calendar td .price{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	line-height: 30px;
+	color:#FD9147;
+	font-size: 16px;
+}
+

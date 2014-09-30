@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>日历</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    </style>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+
+<<<<<<< HEAD
+<body>    
+=======
+<body>
+>>>>>>> a4ca0a9084dfd179db6d0dad31fcf24ae5b4d73a
+    <h2>没有价格的日历</h2>
+    <div id="test-calendar"></div>
+    <h2>有价格的日历</h2>
+    <div id="test-calendar2"></div>
+<<<<<<< HEAD
+=======
+    <h2>异步的日历</h2>
+    <div id="test-calendar3"></div>
+
+>>>>>>> a4ca0a9084dfd179db6d0dad31fcf24ae5b4d73a
+    <script src="../../vendor/jquery.min.js"></script>
+    <script src="../../vendor/moment.js"></script>
+    <script src="festival-map.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="calendar.js"></script>
+    <script>
+    var ctx = this;
+    $(document).ready(function() {
+        $('#test-calendar').calendar({
+            start: '2014/8',
+            end: '2014/10',
+            click: function(year, month, day) {
+                console.log(year, month, day);
+            }
+
+        });
+
+        $('#test-calendar2').calendar({
+            start: '2014/8',
+            end: '2014/12',
+            data: {
+                '2014/11/15': '¥100',
+                '2014/10/27': '¥100',
+                '2014/10/2': '¥300'
+            },
+            noPriceCantSel: true, //如果没有价格就不能选择
+            click: function(year, month, day) {
+                console.log(year, month, day);
+            }
+
+        });
+
+        // 异步
+        var url = ctx.URLS.flight.calendar + '?orgCityID=53&avelCityID=321&startdate=2014-9-10&enddate=2014-9-20'
+        $.ajax({
+            url: url
+        }).done(function(data) {
+            var formatedData = {};
+            data.TicketList.forEach(function(each) {
+                formatedData[each.Date.replace(/-/g, '/')]  = '¥' + each.TicketPrice;
+            });
+            $('#test-calendar3').calendar({
+                start: '2014/8',
+<<<<<<< HEAD
+                end: '2014/10',
+                click: function  (year, month,day) {
+                    console.log(year, month, day);
+                }
+
+            });
+
+            $('#test-calendar2').calendar({
+                start: '2014/8',
+                end: '2014/12',
+                data: {
+                    '2014/11/15': '¥100',
+                    '2014/10/27': '¥100',
+                    '2014/10/2': '¥300'
+                },
+                noPriceCantSel: true, //如果没有价格就不能选择
+                click: function  (year, month,day) {
+=======
+                end: '2014/12',
+                data: formatedData,
+                noPriceCantSel: true, //如果没有价格就不能选择
+                click: function(year, month, day) {
+>>>>>>> a4ca0a9084dfd179db6d0dad31fcf24ae5b4d73a
+                    console.log(year, month, day);
+                }
+
+            });
+        });
+
+    });
+    </script>
+
+</body>
+
+</html>

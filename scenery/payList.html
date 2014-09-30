@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>景区门票</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="../public/css/scenery/payList.css">
+</head>
+
+<body>
+    <header class="tc-header">
+        <div class="bar bar-header">
+            <button class="button icon icon-left"></button>
+            <h1 class="title">填写订单</h1>
+        </div>
+    </header>
+    <div class="t-head">
+        <div class="order-price" id="priceInfo">
+            <span>现场支付:</span>
+            <span id="priceTotal">&yen;55</span>
+            <span class="remind">(点评后返现
+                <font class="fontorange" id="couponMax">&yen;5</font>)</span>
+        </div>
+    </div>
+    <div class="main">
+        
+
+        <div class="w-item conlist mtop">
+            <dl class="fn-clear">
+                <dt>门票：</dt>
+                <dd id="sName">靖港古镇</dd>
+            </dl>
+            <dl class="fn-clear">
+                <dt>价格：</dt>
+                <dd>
+                    <span class="f60" id="sPrice">&yen;55</span>
+                </dd>
+            </dl>
+            <dl class="fn-clear">
+                <dt>说明：</dt>
+                <dd id="sDes">
+                    门票包含10个小景点，联票，行营馆需另外收费。</dd>
+            </dl>
+        </div>
+
+        <div class="w-item">
+            <dl class="in-item fn-clear" id="selDate">
+                <dt>日期</dt>
+                <dd>
+                    <span id="playDay" class="writeok">2014-9-28&nbsp;&nbsp;&nbsp;明天&nbsp;&nbsp;&nbsp;星期日</span>
+                    <em class="icon-right"></em>
+                </dd>
+            </dl>
+        </div>
+        <p class="p-tips">如需预订，您最晚要在游玩当天15:00前下单，请尽早预订。每人最多限购20张。</p>
+        <div class="w-item mtop">
+            <dl class="in-item-number fn-clear">
+                <dt>数量</dt>
+                <dd>
+                    <span id="reduceP" class="btn"></span>
+                    <input id="orderNum" type="tel" class="ipt-numbers notice" maxlength="3" name="ticketnumber" readonly="readonly" />
+                    <span id="plusP" class="btn"></span>
+                </dd>
+            </dl>
+        </div>
+        <div class="w-item">
+            <dl class="in-item fn-clear">
+                <dt>取票人</dt>
+                <dd>
+                    <input type="text" id="getName_1" name="TravelerName" placeholder="请填写取票人姓名" value="" class="writeok" />
+                </dd>
+            </dl>
+        </div>
+        <div class="w-item marginTop">
+            <dl class="in-item fn-clear borderTop">
+                <dt>手机号</dt>
+                <dd>
+                    <input type="tel" id="getPhone_1" name="TravelerMobile" maxlength="11" placeholder="免费接收订单确认短信" value="" class="writeok" />
+                </dd>
+            </dl>
+        </div>
+
+
+
+        <div class="order-btn fn-clear">
+            <div class="submit-btn">
+                <input type="submit" class="btn" id="submitBtn" value="提交订单" />
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

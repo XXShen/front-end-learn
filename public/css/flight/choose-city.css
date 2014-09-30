@@ -1,0 +1,29 @@
+.main{
+	background: #e8e7e7;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.city-list{
+	border-top: 2px solid #cecece;
+	border-bottom: 2px solid #cecece;
+	font-size: 30px;
+	background: #fff;
+}
+.city-list li{
+	padding-left: 40px;
+	height:80px;
+	line-height: 80px;
+	border-bottom: 1px solid #c4d3dd;
+}
+.city-list a{
+	display: block;
+	width:100%;
+	color: #3c4d5a;
+}
+.city-list a:hover{
+	color: #0065cd;
+}
+.city-list li:last:child{
+	border-bottom: none;
+}

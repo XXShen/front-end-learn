@@ -1,0 +1,674 @@
+a:hover{
+text-decoration: none;
+}
+body{
+background-color:#f0f0f0;
+    min-height: 568px;
+}
+.bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 59px;
+  line-height:59px;
+  color:#fff;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  background-color: #1a9ed9;
+  /* border-width: 1px will actually create 2 device pixels on retina */
+  /* this nifty trick sets an actual 1px border on hi-res displays */
+  background-size: 0; }
+  
+  
+.bar .title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 10px;
+	min-width: 30px;
+	  height: 59px;
+    line-height:59px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 18px;
+    color: #fff;
+ }
+.bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
+    display: inline-block;
+    padding: 0 0 1px 0;
+    vertical-align: inherit;
+    font-size: 24px;
+    line-height: 41px;
+    pointer-events: none;
+}
+
+.bar .button.icon-left{
+    box-shadow: none;
+    color: #444;
+    background:url(../../images/arrow-left.png) scroll no-repeat center center transparent;
+	background-size:12px 20px;
+}
+
+.bar .button {
+    border:0 none;
+    color: #444;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 52px;
+    min-height: 47px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+
+.train-tab{
+    padding:20px;
+    font-family: "微软雅黑,microsoft yahei";
+}
+/**
+ * Button Bar
+ * --------------------------------------------------
+ */
+.button-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+
+  background-color:#fff;
+  font-size:28px;
+  width: 100%; }
+  
+  .button-bar > .button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 0;
+      border:1px solid #cecece;
+  border-width: 1px 0px 1px 1px;
+  border-radius: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  color:#727272;
+      font-size: 14px;
+  }
+  .button-bar > .button:before, .button-bar > .button .icon:before {
+    line-height: 44px; }
+  .button-bar > .button:first-child {
+    border-radius: 2px 0px 0px 2px; }
+  .button-bar > .button:last-child {
+    border-right-width: 1px;
+    border-radius: 0px 2px 2px 0px; }
+  .button-bar > .button.active,
+  .button-bar > .button:hover{
+	color:#fff;
+	background-color:#58b5e1;
+  }
+
+.container{
+
+}
+.tc-content{
+    position:relative;
+}
+.list-view{
+    margin-bottom:50px ;
+}
+.station-one{
+
+}
+.station-one .list-item{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.station-one .list-item dt{
+    float: left;
+    text-indent: 35px;
+    width: 32%;
+    color: #7f7f7f;
+    position: relative;
+}
+.station-one .list-item dd{
+    float: right;
+    padding-right: 35px;
+    width: 68%;
+    text-align: right;
+    position: relative;
+}
+.station-one .leave-city dt:before,
+.station-one .arrive-city dt:before,
+.station-one .from-date dt:before,
+.station-one .train-number dt:before{
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 10px;
+    content: "";
+    position: absolute;
+    background: url("../../images/train/train_bg_01.png") scroll no-repeat 0 0;
+}
+.station-one .leave-city dt:before{
+	background-image:url("../../images/train/train_bg_01.png");
+	background-size:18px 15.5px;
+
+}
+.station-one .arrive-city dt:before{
+    background-image:url("../../images/train/train_bg_01-04.png");
+	background-size:18px 15.5px;
+}
+.station-one .from-date dt:before{
+    background-image:url("../../images/train/train_bg_01-07.png");
+	background-size:18px 17px;
+}
+.station-one .train-number dt:before {
+   background-image:url("../../images/train/train_bg_01-10.png");
+   background-size:18px 18px;
+}
+
+.station-one .leave-city dd:before,
+.station-one .arrive-city dd:after,
+.station-one .from-date dd:after,
+.station-one .train-number dd:after{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    right: 0;
+    background: url("../../images/train/train_bg_03.png") scroll no-repeat center 14px;
+	background-size:8.5px 13px;
+}
+
+
+/* 筛选条件 */
+.ui-condition-wrap{
+    position: relative;
+
+}
+.ui-condition-wrap .line{
+    position: absolute;
+    border: 2px solid #35cc00;
+    bottom: -1px;
+    width: 25%;
+}
+.ui-condition-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ui-condition-bar li{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    color: #434e5a;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #90969c;
+    border-right: 1px solid #90969c;
+}
+
+.ui-condition-bar li:last-child{
+    border-right: 0;
+}
+.ui-condition-bar .icon-uparrow,.ui-condition-bar .icon-filter{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background: url("../../images/train/train_bg_29.png") scroll no-repeat 0 0 transparent;
+	background-size:13px 13px;
+}
+.ui-condition-bar .icon-filter{
+   background: url("../../images/train/train_bg_31.png") scroll no-repeat 0 0 transparent;
+   background-size:13px 13px;
+}
+/* 车次列表 */
+.train-list {
+
+}
+.sel-list{
+    width: 100%;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cecece;
+}
+.train-list .sel-left,
+.train-list .sel-mid,
+.train-list .sel-right{
+    float: left;
+}
+.train-list .sel-left{
+    width: 25%;
+    font-size: 15px;
+    padding-top: 27px;
+    text-align: center;
+    color: #6c6c6c;
+}
+.train-list .sel-mid{
+    width: 25%;
+    padding: 5px 0 0;
+}
+.train-list .sel-mid .checi{
+    font-size: 13px;
+    color: #6c6c6c;
+    padding-left: 20px;
+}
+.train-list .sel-mid .starting,
+.train-list .sel-mid .ending{
+    color: #434e5a;
+    font-size: 14px;
+	
+}
+
+.train-list .sel-mid .icon-start,
+.train-list .sel-mid .icon-end{
+     display: inline-block;
+    vertical-align: middle;
+	margin-top:-3px;
+    width:15px;
+    height: 15px;
+    margin-right: 5px;
+    background: scroll no-repeat 0 0 transparent;
+}
+.train-list .sel-mid .icon-start{
+ background-image: url("../../images/train/train_bg_12.png");
+background-size:15px 15px;
+}
+.train-list .sel-mid .icon-end  {
+background-image: url("../../images/train/train_bg_21.png");
+background-size:15px 15px;
+}
+.train-list .sel-right{
+    width: 50%;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.train-list .sel-right .last-time{
+    color: #6c6c6c;
+    font-size: 12px;
+    margin-bottom:10px;
+}
+.train-list .sel-right .alias{
+    color: #434e5a;
+    font-size: 12px;
+
+}
+.train-list .sel-right .alias .price{
+   color: #ff6600;
+    font-size: 12px;
+    margin-left: 10px;
+    padding-right: 15px;
+    position: relative;
+
+}
+.train-list .sel-right .alias .price:before{
+    width: 15px;
+    height: 15px;
+    content: ""  ;
+    position: absolute;
+    right: -9px;
+    top: 2px;
+    background: url("../../images/train/train_bg_05.png") scroll no-repeat 0 0 transparent;
+	background-size:6px 10px;
+}
+
+/* 车次详情page */
+
+.info-box{
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #7f7f7f;
+    border-bottom: 1px solid #cecece;
+}
+
+.tips-box{
+    height:102.5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.tips-box  .depart,
+.tips-box .train-info,
+.tips-box .arrive{
+    float: left;
+    text-align: center;
+}
+.tips-box  .depart,
+.tips-box .arrive{
+     width: 30%;
+    position: relative;
+    padding-top: 15px;
+}
+
+.tips-box .train-info{
+     width: 40%;
+    padding-top: 10px;
+}
+.tips-box .train-info .mtrain{
+  width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../../images/train/train_bg_36.png") scroll no-repeat 0 0 transparent;
+	background-size:18.5px 22.5px;
+}
+.tips-box .train-info .mline{
+    width: 126px;
+    height:12px;
+    margin: 0 auto;
+    background: url("../../images/train/train_bg_42.png") scroll no-repeat 0 0 transparent;
+	background-size:116px 10px;
+}
+
+.tips-box .dtime,
+.tips-box .dname{
+    font-size:16px;
+    color: #000000;
+    line-height:24px;
+}
+.tips-box .depart-icon,
+.tips-box .arrive-icon{
+    display: inline-block;
+     width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -7px;
+    background: url("../../images/train/train_bg_14.png") scroll no-repeat 0 0;
+	background-size:15px 15px;
+}
+.tips-box .arrive-icon{
+background-image: url("../../images/train/train_bg_23.png");
+    background-size:15px 15px;
+}
+
+/* 火车票价 */
+.price-list{
+    margin-bottom:10px;
+}
+.list-tbl{
+    width: 100%;
+}
+.list-tbl thead th{
+    background-color: #58b5e1;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 15px;
+    height: 30px;
+}
+.list-tbl tbody{
+
+}
+.list-tbl tbody td{
+    height: 45px;
+    color: #7f7f7f;
+    font-size: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #cecece;
+}
+.list-tbl tbody td:first-child{
+    padding-left: 12.5px;
+}
+.list-tbl tbody td:last-child{
+    padding-right: 12.5px;
+}
+.price-list .list-tbl .p1{
+    width: 35px;
+}
+.price-list .list-tbl .p2{
+   width: 20%;
+}
+.price-list .list-tbl .p2 em{
+    color: #ff8400;
+}
+.price-list .list-tbl .p3{
+    width: 45%;
+    text-align: right;
+}
+.checi-info .list-tbl th{
+
+}
+
+.checi-info .list-tbl .td1 {
+    width: 35%;
+}
+.checi-info .list-tbl .td2 {
+    padding-left: 15px;
+    width: 25%;
+}
+.checi-info .list-tbl .td3 {
+    padding-left: 20px;
+    width: 20%;
+}
+.checi-info .list-tbl .td4 {
+    padding-left: 17.5px;
+}
+
+/* 订单详情 */
+.order-box{
+    padding: 10px;
+}
+.order-box .ticket-box{
+  background-color: #fff;
+    margin-bottom: 15px;
+}
+.order-box .ticket-box dl{
+    width: 100%;
+    color: #434e5a;
+    padding-left: 10px;
+     margin-bottom: -1px;
+     border: 1px solid #cecece;
+   line-height:  44px;
+    font-size: 15px;
+ }
+.order-box .ticket-box dl dd span{
+    color: #e76924;
+}
+.order-box .ticket-box .item-head dt{
+    float: left;
+
+}
+.order-box .ticket-box .item-body{
+
+}
+.contact-box{
+      background-color: #fff;
+}
+.contact-box .contact-box-hd{
+     line-height: 44px;
+    border: 1px solid #cecece;
+    margin-bottom: -1px;
+    padding-left: 29px;
+	font-size:15px;
+    position: relative;
+}
+.contact-box .contact-box-hd:before{
+    content: "";
+    width:18px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    background: url("../../images/train/train_bg_01-14.png") scroll no-repeat 0 0 transparent;
+	background-size:18px 18px;
+}
+.contact-box .contact-box-bd{
+    border: 1px solid #cecece;
+    padding-left: 10px;
+	overflow:hidden;
+}
+
+.contact-box .contact-box-bd .item{
+    height: 40px;
+    line-height: 40px;
+	font-size:15px;
+    border-bottom: 1px dashed #e3e9ed;
+}
+.contact-box .contact-box-bd .item:last-child{
+    border-bottom: 0;
+}
+.contact-box .contact-box-bd .item dt{
+width:25%;
+    float: left;
+}
+.contact-box .contact-box-bd .item input{
+    padding:2px;
+    border: 0;
+    width: 75%;
+}
+.action-box{
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #fe932b;
+    position: relative;
+    padding-left: 18px;
+}
+.action-box .btn-submit{
+    width: 117px;
+    background-color: #ff6c00;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.action-box .btn-submit button{
+    width: 117px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border: 0;
+}
+/* 提交成功 */
+.result-box{
+    margin: 10px 20px;
+    background-color:#eeeeee ;
+}
+.result-box .tip-success{
+    height:120px;
+    width: 120px;
+    margin: 30px auto;
+
+    background: url("../../images/train_bg.png") scroll no-repeat 0 -368px ;
+}
+.result-box .tip-info{
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #cccccc;
+}
+.result-box .tip-footer{
+    line-height: 14px;
+    padding: 14px 0;
+    font-size: 12px;
+}
+.result-box .tip-footer .tip-hint{
+    color: #ff6600;
+}
+.result-box .tip-footer .phone-num{
+    color: #005bb5;
+}
+/*城市列表*/
+.cui-arrow-close .cui-city-n{display:none}
+.cui-arrow-close .cui-city-t:before,.cui-arrow-close .cui-city-t:after,.cui-arrow-open .cui-city-t:before,.cui-arrow-open .cui-city-t:after{float:right;content:"";width:2px;height:10px;background-color:#aaa;margin:5px 4px 0 0;}
+.cui-arrow-close .cui-city-t:before,.cui-arrow-open .cui-city-t:after{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+.cui-arrow-close .cui-city-t:after,.cui-arrow-open .cui-city-t:before{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);}
+.cui-city-itmes .cui-city-t,.cui-city-tcl{color:#666;font-size:16px;background-color:#efefef;border-bottom:#bcbcbc 1px solid;line-height:30px;padding:5px 10px;display: block}
+.cui-city-itmes .cui-city-n{background-color:#fff;}
+.cui-city-itmes .cui-city-n li{border-bottom:#c4d3dd 1px solid;font-size:16px;line-height:26px;padding:5px 15px 5px 5px;word-break:break-all;color:#3c4d5a;}
+.cui-city-itmes .cui-city-n li.current{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAAP1BMVEUAAAAJn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn94Jn95q8vaOAAAAFHRSTlMAw8/cp5q2BxEDG4zwf3BbSzbmJoL/OqMAAACpSURBVDjLhdNZDoQgEEXRVpkRB6j9r7UtEgK27av60xwCyYWPNGVyogkrzVYwbiEiI5iZrjmgsRObHRpv2Gx4M8UmYhPZaGwSG+Wh2dgYC83OZsbmYLO4YdHTn2zyYBIp/8+s4XbAX1WIpwx/NDU1hL/mbJ9d6Vv4Z1SvqgLhe0cthLdVRRC+L48tfEK3KwnhbT1upUq4zWJ4t1APjxWHxypTDvJrnV7MF34yDmacQrD2AAAAAElFTkSuQmCC) 97% center no-repeat;background-size:18px 14px;}
+
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 10px 6px;
+    font-size: 18px;
+    color: #fff;
+    font-family: "microsoft yahei";
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-search{
+    width: 100%;
+    background-color: #fe932b;
+}
+.btn-order{
+   background-color: #ff8400;
+    color: #fff;
+    border:0;
+    font-size:15px;
+    height: 25px;
+    line-height: 25px;
+    padding:0 10px;
+}

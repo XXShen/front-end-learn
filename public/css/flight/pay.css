@@ -1,0 +1,98 @@
+.main{
+	background: #e8e7e7;
+	padding-bottom: 50px;
+}
+.info-box{
+	border: 1px solid #cecece;
+	margin: 15px 20px;
+	background: #f4eeeb;
+	color: #434e5a;
+}
+
+.tip{
+	height: 38px;
+	line-height: 38px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	color: #434e5a;
+	font-size: 18px;
+}
+.tip strong{
+	color: #006edc;
+	font-weight: normal;
+}
+.sumary-box{
+	padding: 20px;
+	position: relative;
+	line-height: 46px;
+	font-size: 30px;
+	color: #434e5a;
+}
+.sumary-box .not-pay-icon{
+	position: absolute;
+	top:20px;
+	right: -1px;
+	box-sizing:border-box;
+	width: 162px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	padding-left: 44px;
+    background: url('../../images/flight/pay.png') right 2px no-repeat;
+}
+.sumary-box .box-inner{
+    background: url('../../images/flight/arrow.png') right -516px no-repeat;
+}
+.sumary-box .item label{
+	float: left;
+	width: 170px;
+}
+.sumary-box .item p{
+	margin-left: 170px;
+}
+.sumary-box .item.order p{
+	color: #ff7011;
+}
+
+.pay-list li{
+	border-bottom: 1px solid #cecece;
+	padding: 20px;
+}
+
+.pay-list li:last-child{
+	border-bottom: none;
+}
+.pay-list li .inner{
+    background: url('../../images/flight/arrow.png') right -587px no-repeat;
+}
+.pay-list li a{
+	display: block;
+	height: 50px;
+	padding-left: 80px;
+}
+.pay-list .info{
+	color: #434e5a;
+}
+.pay-list .info h3{
+	font-size: 28px;
+	line-height: 32px;
+}
+.pay-list .info p{
+	line-height: 18px;
+	font-size: 18px;
+}
+.pay-list .alipay-desk a{
+    background: url('../../images/flight/pay.png') left -100px no-repeat;
+}
+
+.pay-list .alipay-web a{
+    background: url('../../images/flight/pay.png') left -186px no-repeat;
+}
+
+.pay-list .visa a{
+    background: url('../../images/flight/pay.png') left -292px no-repeat;
+}
+
+.pay-list .union-pay a{
+    background: url('../../images/flight/pay.png') left -392px no-repeat;
+}

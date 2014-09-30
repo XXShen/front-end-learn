@@ -1,0 +1,168 @@
+.t-head {
+    border: 1px solid #cbc9c5;
+    border-top: 0;
+    border-bottom: 0;
+    background-image: url(http://img1.40017.cn/touch/cn/public/orderWriteBg.png);
+    background-size: 7px 7px;
+    padding-top: 5px;
+}
+.order-price {
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    background-image: url(http://img1.40017.cn/touch/cn/public/orderWriteRx.png);
+    background-size: 9.5px 4px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+#priceTotal, #couponMax {
+    color: #f60;
+}
+.remind {
+    font-size: 24px;
+}
+.main {
+    padding: 10px;
+    background: #eee;
+}
+.w-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+.conlist {
+    padding: 10px;
+    font-size: 24px;
+    overflow: hidden;
+}
+.conlist dl {
+    width: 100%;
+    clear: both;
+}
+.conlist dt, .conlist dd {
+    float: left;
+}
+.mtop {
+    margin-top: 10px;
+}
+.f60 {
+    color: #f60;
+}
+.in-item {
+    line-height: 1.6;
+    font-size: 24px;
+    padding: 10px 0;
+}
+.in-item dt {
+    float: left;
+    width: 25%;
+    margin: 0 0 0 10px;
+}
+.in-item dd {
+    position: relative;
+    overflow: hidden;
+    padding: 0 25px 0 10%;
+}
+span.writeok {
+    color: #005bb5;
+}
+.in-item dd span {
+    display: block;
+    text-align: right;
+    color: #1a9ed9;
+}
+.icon-right {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: url(../../images/scenery/sceneryIcon.png) 0 -488px no-repeat;
+    float: right;
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+}
+.p-tips {
+    font-size: 24px;
+    border: 1px solid #ccc;
+    line-height: 1.6;
+    padding: 10px;
+    background: #fff;
+    color: #f60;
+}
+.in-item-number {
+    padding: 10px;
+}
+.in-item-number dt {
+    line-height: 44px;
+    float: left;
+    width: 25%;
+    font-size: 24px;
+}
+.in-item-number dd {
+    text-align: right;
+}
+.in-item-number dd span.btn {
+    background: url(http://img1.40017.cn/touch/cn/scenery/order/icon_anniu.png) no-repeat;
+    background-size: 50px 75px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 10px 0 0;
+}
+.in-item-number dd {
+    text-align: right;
+}
+.in-item-number dd input.notice {
+    background-image: url(http://img1.40017.cn/touch/cn/scenery/order/cursor.gif);
+}
+.in-item-number dd input.ipt-numbers {
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    background-color: white;
+    color: #005bb5;
+    outline: 0;
+    border: 1px solid #a6a6a6;
+    margin: 7px 5px 0;
+    position: relative;
+    vertical-align: top;
+    background: no-repeat 33px center;
+    background-size: 1px 14px;
+}
+.in-item-number dd span.btn {
+    background: url(http://img1.40017.cn/touch/cn/scenery/order/icon_anniu.png) no-repeat;
+    background-size: 50px 75px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 10px 0 0;
+}
+.in-item dd input {
+    width: 100%;
+    margin-right: -15px;
+    height: 44px;
+    border: 0;
+    background: 0;
+    color: #005bb5;
+    outline: 0;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+}
+.order-btn {
+    text-align: center;
+}
+.order-btn input {
+    width: 100%;
+    padding: 10px 0;
+    height: 1.6;
+    border: 0;
+    font-size: 30px;
+    color: #fff;
+    background: #fe932b;
+    border-radius: 5px;
+}

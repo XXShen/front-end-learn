@@ -1,0 +1,357 @@
+﻿
+.main{
+    font-family: "Microsoft Yahei";
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: 165px;
+    margin-bottom: 10px;
+}
+.seachBox{
+    width: 80%;
+    margin: 0 auto;
+    border:1px solid #fe932b;
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+}
+.seachBox input{
+    height: 80px;
+    border: 0;
+    float: left;
+    border-radius: 5px;
+    width: 100%;
+}
+.seachBox  a{
+    width: 118px;
+    height: 80px;
+    background: url(../../images/scenery/sceneryIcon.png)  no-repeat #fe932b 30px -140px;
+    position: absolute;
+    right: 0;
+}
+.list{
+    margin: 20px 0 0 0;
+    
+    border-top:1px solid #ccc;
+    overflow: hidden;
+}
+.list-item{
+    
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding: 20px;
+}
+.pic{
+    float: left;
+    width: 188px;
+    height: 142px;
+    padding:2px;
+    border:1px solid #ccc;
+}
+.pic img{
+    width: 188px;
+    height: 142px;
+    overflow: hidden;
+}
+.info{
+    float: left;
+    margin: 0 0 0 10px;
+}
+.info h5{
+    font-size: 30px;
+}
+.info .i-note{
+    font-size: 24px;
+}
+
+    
+.price{
+    float: right;
+    font-size: 36px;
+    color: #f60;
+    margin: 30px 0 0 0;
+}
+.price em{
+    color: #999;
+    font-size: 24px;
+}
+.ad{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.ad img{
+    width: 100%;
+    min-height: 160px;
+}
+.ad .ad-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    background-color:rgba(0,0,0,.7);
+}
+.ad .ad-text h4{
+    float: left;
+    font-size: 30px;
+    line-height: 34px;
+    color: #fff;
+}
+.ad .ad-text span{
+    float: right;
+    font-size: 24px;
+    line-height: 34px;
+}
+.ad .ad-text p{
+    font-size: 24px;
+    width: 100%;
+    float: left;
+    padding: 10px 0 0 0;
+}
+.mode-margin{
+    margin: 10px 20px;
+    overflow: hidden;
+}
+.mode-border{
+    border: 1px solid #ccc;
+    
+}
+.mode-border .seed{
+    padding:10px 20px;
+}
+.icon-landmark span{
+    font-size: 24px;
+    float: left;
+    padding-left: 40px;
+    background: url(../../images/scenery/sceneryIcon.png) 0 -324px no-repeat;
+    color: #333;ß
+}
+.icon-goto {
+    
+    overflow: hidden;
+    line-height: 1.6;
+    
+}
+.icon-goto em{
+    background: url(../../images/scenery/sceneryIcon.png) 0 -488px no-repeat;
+    float: right;
+   
+    width: 15px;
+    height: 30px;
+    display: inline-block;;
+}
+.border-top{
+    border-top: 1px solid #ccc;
+
+}
+.icon-nike span{
+    width: 30%;
+    overflow: hidden;
+    color: #95b643;
+    display: inline-block;
+    text-align: center;
+    
+}
+.icon-nike span em{
+    background: url(../../images/scenery/sceneryIcon.png) 0 -648px no-repeat;
+    padding-left: 40px;
+    display: inline-block;;
+}
+.prompt-text{
+    line-height: 1.6;
+    font-size: 24px;
+
+}
+.prompt-text span{
+    color: #f60;
+}
+.mtop20{
+    margin-top: 20px;
+}
+.ticket{
+    float: left;
+    width: 65%;
+}
+.over-flow{
+    overflow: hidden;
+}
+.git-buttom{
+    float: right;
+    width: 134px;
+    height: 106px;
+    border: 1px solid #f60;
+    border-radius: 5px;
+    text-align: center;
+    background: #f60;
+}
+.git-buttom span{
+    color: #fff;
+    font-size: 30px;
+    height: 64px;
+    line-height: 64px;
+
+}
+.git-buttom p{
+    color: #f60;
+    background: #fff;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+}
+.ticket p{
+    font-size: 30px;
+}
+.ticket p{
+    font-size: 24px;
+}
+.press em{
+    font-size: 36px;
+    color: #f60;
+}
+.press span{
+    font-size: 24px;
+    color: #999;
+}
+.list-ticket{
+    width: 100%;
+    overflow: hidden;
+}
+.list-ticket li{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.list-ticket li p,.list-ticket li span{
+    float: left;
+    color: #333;
+    line-height: 40px;
+}
+.list-ticket li span em{
+    float: left;
+    color: #f60;
+    font-size: 30px;
+}
+.list-ticket li span{
+    font-size: 24px;
+    margin: 0 0 0 20px;
+}
+.list-ticket li p{
+    font-size: 30px;
+}
+.list-ticket li a{
+    float: left;
+}
+.icon-slide i{
+    width: 30px;
+    height: 30px;
+    float: right;
+    background: url(../../images/scenery/sceneryIcon.png) no-repeat 5px  -790px;
+
+}
+
+/*搜索展开部分*/
+.main2 .rmcslist { }
+.main2 .imagex { width: 14px; height: 9px; position: absolute; bottom: 40%; right: 10px; }
+.main2 .rotate90:after { -moz-transform: rotate(90deg); -moz-transform-origin: 50% 50%; -webkit-transform: rotate(90deg); -webkit-transform-origin: 50% 50%; -o-transform: rotate(90deg); -o-transform-origin: 50% 50%; transform: rotate(90deg); transform-origin: 50% 50%; }
+.main2 p.title { line-height: 45px; border-bottom: 1px solid #c8c8c5; border-top: 1px solid white; padding-left: 10px; }
+.main2 p[name="remen"].title:after { background: 0; }
+.main2 p.title:after { content: ""; width: 9px; height: 13px; margin: 15px 10px 0 0; float: right !important; background: url(http://img1.40017.cn/touch/cn/public/icon_you.png) 50% 50% no-repeat; background-size: 9px 13px; }
+.main2 .main2 .citytittle { line-height: 40px; height: 40px; position: relative; list-style: none; display: inline-block; text-indent: 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 90%; overflow: hidden; }
+.main2 .ico-right { width: 9px; height: 13px; background: url(http://img1.40017.cn/touch/cn/scenery/search/arrow.png) -9px 0px no-repeat; background-size: 23px 40.5px; position: absolute; right: 5px; top: 12px; z-index: 999; }
+.main2 .ico-right-circle { width: 23.5px; height: 22.5px; background: url(http://img1.40017.cn/touch/cn/scenery/search/arrow.png) 0px -18px no-repeat; background-size: 23px 40.5px; position: absolute; right: 10px; top: 17px; }
+.main2 .banner { padding: 10px; text-align: center; }
+.main2 .banner img { width: 100%; max-width: 600px; display: block; margin: 0 auto; }
+.main2 .wrap { padding: 10px 0 10px; }
+.main2 .sinput { background: none; border: 1px solid #FFC090; }
+.main2 .skey { padding-left: 10px; color: #aaa; height: 40px; line-height: 40px; }
+.main2 .writeok { color: #006edc; }
+.main2 .d_search { position: relative; }
+.main2 .d_search .p_search { height: 44px; position: relative; border: 1px solid #dcdcdc; margin: 0 10px; background-color: White; border-radius: 5px; z-index: 9; }
+.main2 .d_search .p_search .search-span { background: url(http://img1.40017.cn/touch/cn/scenery/search/scenery-index-all.png) no-repeat 19px 11px #FE932B; background-size: 22px 65.5px; width: 58px; height: 44px; display: inline-block; vertical-align: middle; float: right; border-bottom-right-radius: 5px; border-top-right-radius: 5px; }
+.main2 .d_search .p_search .search-spancancel { width: 58px; height: 44px; display: inline-block; vertical-align: middle; float: right; border-bottom-right-radius: 5px; border-top-right-radius: 5px; color: #0065cd; text-align: center; background-color: #f2f2f2; }
+.main2 .d_search .p_search .search-spancancel label { line-height: 44px; }
+.main2 .d_search .p_search .input_span { display: block; overflow: hidden; position: relative; height: 96%; border: 1px solid #dcdcdc; }
+.main2 .input_span_after { position: absolute; right: 0; top: 8px; z-index: 10; width: 20px; height: 19px; margin: 5px 15px 0 0; float: right; background: url(http://img1.40017.cn/touch/cn/public/sousuo1.png) no-repeat 50% 50%; background-size: 100% auto; background-position: 0 bottom; display: none; }
+.main2 .d_search .p_search input { margin-top: 13px; height: 20px; box-shadow: none; width: 95%; position: relative; border: 0; -webkit-appearance: none; background-color: #FFF; outline: 0; text-indent: 0px; padding-right: 15px; margin-left: 10px; }
+.main2 .loading { line-height: 40px; height: 100%; width: 100%; text-align: center; }
+.main2 #searchCitys { position: absolute; top: 46px; left: 0; width: 100%; z-index: 999; }
+.main2 #searchCitys .serarchNearyBy { cursor: pointer; margin: 5px 10px 0; font-size: 15px; border: 1px solid #C7D2DC; height: 42px; line-height: 42px; text-indent: 40px; background: url(http://img1.40017.cn/touch/cn/scenery/search/scenery-index-all.png) no-repeat 9px -34px; background-size: 22px 65.5px; }
+.main2 #searchCitys .serarchNearyBy:after { content: ""; width: 9px; height: 13px; margin: 14px 10px 0 0; float: right !important; background: url(http://img1.40017.cn/touch/cn/public/icon_you.png) right 0 no-repeat; background-size: 9px 13px; }
+.main2 #searchCitys ul { overflow: hidden; margin: auto; border: 1px solid #BABABA; margin: 5px 10px 0; }
+.main2 #searchCitys ul li { line-height: 40px; position: relative; list-style: none; display: inline-block; overflow: hidden; white-space: nowrap; text-indent: 10px; text-overflow: ellipsis; width: 100%; overflow: hidden; border-bottom: 1px solid #c7d2dc; }
+.main2 #searchCitys .serarchNearyBy, #searchCitys ul { background-color: White; }
+.main2 .main2 .hotCity_list li { text-indent: 10px; }
+.main2 #cityLeter { position: absolute; top: 46px; left: 0; width: 100%; z-index: 999; }
+.main2 #cityLeter .serarchNearyBy { cursor: pointer; margin: 5px 10px 0; font-size: 15px; border: 1px solid #C7D2DC; height: 42px; line-height: 42px; text-indent: 40px; background: url(http://img1.40017.cn/touch/cn/scenery/search/scenery-index-all.png) no-repeat 9px -34px; background-size: 22px 65.5px; }
+.main2 #cityLeter .serarchNearyBy:after { content: ""; width: 9px; height: 13px; margin: 14px 10px 0 0; float: right !important; background: url(http://img1.40017.cn/touch/cn/public/icon_you.png) right 0 no-repeat; background-size: 9px 13px; }
+.main2 #cityLeter ul { overflow: hidden; margin: auto; border: 1px solid #BABABA; margin: 10px 10px 0; }
+.main2 #cityLeter ul li { line-height: 40px; position: relative; list-style: none; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 100%; overflow: hidden; text-indent: 10px; }
+.main2 #cityLeter .serarchNearyBy, #cityLeter ul { background-color: White; }
+.main2 .sbtn { font-size: 15px; display: block; height: 44px; line-height: 44px; text-align: center; background-color: #FF8220; border-radius: 5px; color: White; margin-top: 10px; }
+.main2 .stheme { padding-top: 5px; overflow: hidden; margin: 0 10px; width: auto; }
+.main2 .stheme .citylist { width: 111%; }
+.main2 .stheme .citylist li { width: 23.5%; float: left; }
+.main2 .stheme .citylist li a { text-align: center; font-size: 12px; display: inline-block; border: 1px solid #C7D2DC; background-color: #FCFCFC; width: 80%; height: 31px; line-height: 33px; padding: 0; margin: 5px 0 0 0; z-index: 2; color: #434D59; }
+.main2 .other { overflow: hidden; padding: 0 10px; }
+.main2 .other .pic { width: 125px; height: 125px; position: relative; float: left; }
+.main2 .other .pic img { width: 100%; height: 100%; }
+.main2 .other .pic .info { height: 37px; color: white; position: absolute; bottom: 0; left: 0; text-indent: 10px; width: 100%; height: 37px; color: White; z-index: 3; }
+.main2 .other .pic .info h3 { font-size: 15px; line-height: 19px; margin-top: 1px; }
+.main2 .other .pic .info p { font-size: 12px; }
+.main2 .other .pic .bg { height: 37px; color: white; position: absolute; bottom: 0; left: 0; width: 100%; height: 37px; background-color: black; opacity: 0.5; z-index: 2; }
+.main2 .other .container { overflow: hidden; position: relative; text-indent: 10px; padding: 0; padding-left: 1px; }
+.main2 .other .container .info { height: 52px; padding-top: 10px; margin-bottom: 1px; background-color: #F2B24D; color: White; display: block; position: relative; }
+.main2 .other .container .info:first-child { background-color: #7DCF93; }
+.main2 .other .container .info h3 { font-size: 15px; }
+.main2 .other .container .info p { font-size: 12px; }
+.main2 .main2 .hx { width: 100%; text-align: center; color: #3989e2; line-height: 30px; position: static; margin: 10px 0 20px; }
+.main2 .hx .hx_bg { background: url(http://img1.40017.cn/touch/cn/airplane/zx.png) no-repeat; display: inline-block; height: 22px; background-size: 100% 100%; width: 19px; margin-right: 7px; vertical-align: middle; }
+.main2 #poper .poper { position: absolute; width: 100%; height: 100%; top: 0; background: #000; z-index: 90; opacity: .3; }
+.main2 #poper .img_zx { position: fixed; z-index: 100; width: 100%; top: 142px; }
+.main2 #poper .img_zx img { margin: auto; max-width: 269px; display: table; }
+
+
+.bannerbox {
+    max-width: 640px;
+    /*min-height: 100px;*/
+    margin: auto;
+    position: relative;
+}
+.bannerbox img { vertical-align: middle; width: 100%; }
+.searchbox {
+    width: 100%; padding: 10px 10px;
+    /*position: absolute; */
+    bottom: 0px; left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+.searchbox .p_search {
+    position: relative; height: 44px; position: relative;
+    border: 1px solid #fe932b;
+    /*border-radius: 5px; */
+    background-color: White;
+}
+.searchbox .p_search .fsearch-span { background-size: 22px 65.5px; width: 30px; height: 25px; display: inline-block; vertical-align: middle; float: left; }
+.searchbox .p_search .input_span { display: block; overflow: hidden; position: relative; border-radius: 3px; margin-left: 35px; }
+
+.searchbox .p_search input { margin-top: 13px; height: 20px; box-shadow: none; width: 100%; position: relative; border: 0; -webkit-appearance: none; background-color: #FFF; outline: 0; text-indent: 10px; padding-left: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.searchbox .imagex {
+    display: inline-block;
+    width: 14px; height: 9px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -4px; right: 10px; background-size: 100% 100%;
+    background-image: url('http://img1.40017.cn/touch/cn/scenery/search/xljtimage.png');
+}
+html body { padding-bottom: 50px; }
+
+
+.ofix{ height:50px; width:100%; padding-top:10px; padding-left:46px; position:fixed; bottom:0; left:0;  background:rgba(0, 0, 0, .7); z-index:9; color:#fff; line-height:16px; font-size:10px;-webikit-box-sizing:border-box;-moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+.ofix p{ font-size:15px; line-height:16px; padding-top:2px;}
+.ofix .tcicon{ height:36px; width:36px; display:block; position:absolute; top:7px; left:5px; vertical-align:middle; float:left;}
+.ofix .close{height:14px; width:14px; float:right; padding:8px 10px;}
+.ofix .downbtn{ display:block; width:100px; height:36px; line-height:36px; font-size:18px; background:#3cafdc;color:#fff; border-radius:5px; text-align:center;  position:absolute; right:30px; top:7px; }
+
+
+

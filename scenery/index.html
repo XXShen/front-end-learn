@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>景区门票</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="../public/css/scenery/index.css">
+</head>
+
+<body>
+    <header class="tc-header">
+        <div class="bar bar-header">
+            <button class="button icon icon-left"></button>
+            <h1 class="title">景点</h1>
+        </div>
+    </header>
+    <div class="main">
+        <img class="banner" src="../public/images/scenery/privilege.png" alt="">
+        <div class="seachBox">
+            <input type="text">
+            <a href="javascript:void(0);"></a>
+        </div>
+        <div class="list">
+            <div class="list-item fn-clear" data-id="25323" data-isbook="1">
+                <div class="pic">
+                    <img src="http://upload.17u.com/uploadfile/scenerypic_common/160_120/2011/09/07/2/2011090715514021477.jpg" onerror="javascript:this.src='http://img1.40017.cn/touch/cn/public/defaultThumb.png'">
+                </div>
+                <div class="info">
+                    <h5>靖港古镇</h5>
+                    <div class="i-note">
+                        <p>
+                            <span style="color:#006edc">392人已订</span>AAAA</p>
+                        <p class="pinfo_show">湖南省长沙市望城县靖港古镇</p>
+                    </div>
+                </div>
+                <div class="price">¥55
+                    <em>起</em>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+            <div class="list-item fn-clear" data-id="25323" data-isbook="1">
+                <div class="pic">
+                    <img src="http://upload.17u.com/uploadfile/scenerypic_common/160_120/2011/09/07/2/2011090715514021477.jpg" onerror="javascript:this.src='http://img1.40017.cn/touch/cn/public/defaultThumb.png'">
+                </div>
+                <div class="info">
+                    <h5>靖港古镇</h5>
+                    <div class="i-note">
+                        <p>
+                            <span style="color:#006edc">392人已订</span>AAAA</p>
+                        <p class="pinfo_show">湖南省长沙市望城县靖港古镇</p>
+                    </div>
+                </div>
+                <div class="price">¥55
+                    <em>起</em>
+                </div>
+                <span class="arrow-right"></span> 
+            </div>
+            <div class="list-item fn-clear" data-id="25323" data-isbook="1">
+                <div class="pic">
+                    <img src="http://upload.17u.com/uploadfile/scenerypic_common/160_120/2011/09/07/2/2011090715514021477.jpg" onerror="javascript:this.src='http://img1.40017.cn/touch/cn/public/defaultThumb.png'">
+                </div>
+                <div class="info">
+                    <h5>靖港古镇</h5>
+                    <div class="i-note">
+                        <p>
+                            <span style="color:#006edc">392人已订</span>AAAA</p>
+                        <p class="pinfo_show">湖南省长沙市望城县靖港古镇</p>
+                    </div>
+                </div>
+                <div class="price">¥55
+                    <em>起</em>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+       
+        <div style="position: relative;">
+            <form onsubmit="javascript:addinput(this,'tijiao',2)" faction="/scenery/scenerylist_{keyword}.html">
+                <div id="page1" class="default">
+                    <div class="wrap">
+                        <div class="d_search">
+                            <p class="p_search">
+                                <span class="search-span" style="display: none;"></span><span class="search-spancancel" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">
+                            <label>
+                                取消</label></span><span class="input_span" style="border: 1px solid rgb(220, 220, 220);">
+                                    <input type="search" nohide="1" id="s_cName" placeholder="请输入城市名/景点名/主题" furl="/scenery/scenerylist_{keyWord}.html" fnearybyurl="/scenery/nearbyscenery.html" more-labelurl="/scenery/json/sld.html"><span class="input_span_after" style="display: none;"></span></span>
+                            </p>
+                            <div id="searchCitys" style="display: none;">
+                            </div>
+                            <div id="cityLeter" furl="/scenery/json/getcitysbyletter.html" style="display: block; -webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">
+                                <ul id="remen" class="hotCity_list">
+                                    <li onclick="rmchclick()" style="background-color: #eeeeee;">
+                                        <label>
+                                            热门城市</label><label><img alt="" id="rmcsjt" class="imagex" src="http://img1.40017.cn/touch/cn/scenery/search/xljtimage.png"></label></li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'苏州',0)" style=" width:80%;display: inline-block; float:left">
+                                            苏州</label>
+                                        <label onclick="addinput(this,'苏州',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'常州',0)" style=" width:80%;display: inline-block; float:left">
+                                            常州</label>
+                                        <label onclick="addinput(this,'常州',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'上海',0)" style=" width:80%;display: inline-block; float:left">
+                                            上海</label>
+                                        <label onclick="addinput(this,'上海',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'广州',0)" style=" width:80%;display: inline-block; float:left">
+                                            广州</label>
+                                        <label onclick="addinput(this,'广州',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'深圳',0)" style=" width:80%;display: inline-block; float:left">
+                                            深圳</label>
+                                        <label onclick="addinput(this,'深圳',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'无锡',0)" style=" width:80%;display: inline-block; float:left">
+                                            无锡</label>
+                                        <label onclick="addinput(this,'无锡',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'杭州',0)" style=" width:80%;display: inline-block; float:left">
+                                            杭州</label>
+                                        <label onclick="addinput(this,'杭州',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'清远',0)" style=" width:80%;display: inline-block; float:left">
+                                            清远</label>
+                                        <label onclick="addinput(this,'清远',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'成都',0)" style=" width:80%;display: inline-block; float:left">
+                                            成都</label>
+                                        <label onclick="addinput(this,'成都',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'北京',0)" style=" width:80%;display: inline-block; float:left">
+                                            北京</label>
+                                        <label onclick="addinput(this,'北京',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'青岛',0)" style=" width:80%;display: inline-block; float:left">
+                                            青岛</label>
+                                        <label onclick="addinput(this,'青岛',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                    <li class="rmcslist">
+                                        <label onclick="addinput(this,'大连',0)" style=" width:80%;display: inline-block; float:left">
+                                            大连</label>
+                                        <label onclick="addinput(this,'大连',1)" style="float: right; color: #989898; margin-right: 10px; font-size: 24px; ">
+                                            +</label>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <p onclick="Cityslbclick(this,'A')" class="title load" name="A" style=" background:#eeeeee;">A</p>
+                                    <p id="A" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'B')" class="title load" name="B" style=" background:#eeeeee;">B</p>
+                                    <p id="B" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'C')" class="title load" name="C" style=" background:#eeeeee;">C</p>
+                                    <p id="C" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'D')" class="title load" name="D" style=" background:#eeeeee;">D</p>
+                                    <p id="D" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'E')" class="title load" name="E" style=" background:#eeeeee;">E</p>
+                                    <p id="E" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'F')" class="title load" name="F" style=" background:#eeeeee;">F</p>
+                                    <p id="F" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'G')" class="title load" name="G" style=" background:#eeeeee;">G</p>
+                                    <p id="G" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'H')" class="title load" name="H" style=" background:#eeeeee;">H</p>
+                                    <p id="H" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'J')" class="title load" name="J" style=" background:#eeeeee;">J</p>
+                                    <p id="J" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'K')" class="title load" name="K" style=" background:#eeeeee;">K</p>
+                                    <p id="K" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'L')" class="title load" name="L" style=" background:#eeeeee;">L</p>
+                                    <p id="L" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'M')" class="title load" name="M" style=" background:#eeeeee;">M</p>
+                                    <p id="M" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'N')" class="title load" name="N" style=" background:#eeeeee;">N</p>
+                                    <p id="N" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'P')" class="title load" name="P" style=" background:#eeeeee;">P</p>
+                                    <p id="P" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'Q')" class="title load" name="Q" style=" background:#eeeeee;">Q</p>
+                                    <p id="Q" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'R')" class="title load" name="R" style=" background:#eeeeee;">R</p>
+                                    <p id="R" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'S')" class="title load" name="S" style=" background:#eeeeee;">S</p>
+                                    <p id="S" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'T')" class="title load" name="T" style=" background:#eeeeee;">T</p>
+                                    <p id="T" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'W')" class="title load" name="W" style=" background:#eeeeee;">W</p>
+                                    <p id="W" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'X')" class="title load" name="X" style=" background:#eeeeee;">X</p>
+                                    <p id="X" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'Y')" class="title load" name="Y" style=" background:#eeeeee;">Y</p>
+                                    <p id="Y" class="fn-hide">
+                                    </p>
+                                    <p onclick="Cityslbclick(this,'Z')" class="title load" name="Z" style=" background:#eeeeee;">Z</p>
+                                    <p id="Z" class="fn-hide">
+                                    </p>
+                                </ul>
+                                <div style="height: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+   
+    </div>
+    <script src="http://css.17u.com/com/js/jquery-1.7.1.min.js?v=2014070202">
+    </script>
+    <script src="../public/js/scenery/index.js"></script>
+    <script type="text/javascript">
+        $.fn.hoverClass = function (className) {
+            if (!$(this).hasClass(className || "active")) {
+                $(this).bind("touchstart mousedown",
+                        function () {
+                            $(this).addClass(className || "headerhover");
+
+                        }).bind("touchcancel touchend mouseup",
+                        function () {
+                            $(this).removeClass(className || "headerhover")
+                        })
+            }
+            return $(this)
+        };
+
+        $(".header a").hoverClass();
+
+        //添加本地存储功能
+        var StorageHelp = {
+            SetStorage: function (name, value) {
+                if (window.localStorage) {
+                    var storage = window.localStorage;
+                    try {
+                        storage.setItem(name, value);
+                    } catch (ex) {
+                        $.cookie(name, value);
+                    }
+                } else {
+                    $.cookie(name, value);
+                }
+            },
+            GetStorage: function (name) {
+                if (window.localStorage) {
+                    var storage = window.localStorage;
+                    try {
+                        storage = storage.getItem(name);
+                        if (storage == null || storage == "") {
+                            return $.cookie(name) == null ? "" : $.cookie(name);
+                        } else {
+                            return storage;
+                        }
+                    } catch (ex) {
+                        return $.cookie(name) == null ? "" : $.cookie(name);
+                    }
+                } else {
+                    return $.cookie(name) == null ? "" : $.cookie(name);
+                }
+            }
+        }
+
+
+        $("body").css(
+           "background", "#ffffff"
+        )
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+.back-href {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+}
+.query {
+    box-size: border-box;
+    height: 80px;
+    padding: 10px 0;
+    background: #EAEAEA;
+    color: #555;
+}
+.query .prev-day, .query .select-day, .query .next-day {
+    height: 100%;
+    box-size: border-box;
+}
+.query .time{
+    font-size: 26px;
+    line-height: 31px;
+    height: 31px;
+    color: #555;
+}
+.query .price {
+    font-size: 20px;
+    line-height: 26px;
+    height: 26px;
+    color: #555;
+}
+.query .prev-day {
+    box-sizing: border-box;
+    float: left;
+    width: 30%;
+    padding-left: 34px;
+    background: url('../../images/flight/arrow.png') left 15px no-repeat;
+    margin-left: 10px;
+    border-right: 1px solid #cbcbcb;
+}
+.query .next-day {
+    box-sizing: border-box;
+    float: right;
+    width: 30%;
+    padding-right: 34px;
+    text-align: right;
+    background: url('../../images/flight/arrow.png') right -85px no-repeat;
+    margin-right: 10px;
+    border-left: 1px solid #cbcbcb;
+}
+.query .select-day {
+    box-sizing: border-box;
+    border-right: 20px solid #eaeaea;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: url('../../images/flight/arrow.png') right -437px no-repeat;
+}
+
+.query .select-day .inner-content {
+    box-size: border-box;
+    width: 195px;
+    margin: 0 auto;
+}
+.query .select-day .calender-icon {
+    background: url('../../images/flight/icon.png') 0 0 no-repeat;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+}
+.query .select-day .price{
+    color: #ff8400;
+}
+.query .select-day .info-wrap{
+    display: inline-block;
+    text-align: center;
+}
+
+.flight-item .show-content{
+    color: #333;
+    padding: 0 20px;
+    border-bottom: 2px solid #cecece;
+}
+
+.flight-item .left-side,
+.flight-item .time,
+.flight-item .loc{
+    float: left;
+
+}
+.flight-item .right-side{
+    float: right;
+}
+.flight-item .right-side.price{
+    height: 94px;
+    line-height: 94px;
+    font-size: 30px;
+    color: #ff8400;
+    padding-right: 30px;
+    font-weight: bold;
+    background: url('../../images/flight/arrow.png') right -366px no-repeat;
+}
+
+
+.flight-item .from {
+    font-size: 30px;
+    margin-right: 25px;
+    line-height: 54px;
+}
+
+.flight-item .to{
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.flight-info{
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.flight-info .name,
+.flight-info .type{
+    margin-right: 15px;
+}
+
+.flight-info .flight-icon{
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.flight-info .right-side{
+    margin-right: 30px;
+}
+
+.flight-info .additon .has-eat-icon,
+.flight-info .additon .has-stop-icon{
+    float: right;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+.flight-info .additon .has-eat-icon{
+    background: #dc8200;
+}
+
+.flight-info .additon .has-stop-icon{
+    background: #7dbe17;
+}
+.show-detail-href{
+    display: block;
+    margin: 0 auto;
+    height: 14px;
+    width: 102px;
+}
+.show-detail-href.closed{
+    background: url('../../images/flight/arrow.png') left -303px no-repeat;
+}
+.show-detail-href.opened{
+    background: url('../../images/flight/arrow.png') left -200px no-repeat;
+}
+
+.more .item{
+    height: 50px;
+    line-height: 50px;
+    padding: 8px 25px 8px 45px;
+    font-size: 24px;
+    background: #eee;
+    border-bottom: 1px solid #cecece;
+}
+.more .item .cabin-type{
+    color: #383737;
+    margin-right: 20px;
+}
+.more .item .privilege{
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    background: #c77e7e;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.more .item .price{
+    color: #f60;
+    margin-right: 68px;
+}
+.more .item .order-btn{
+    color: #fff;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background: #ff8400;
+}
+
